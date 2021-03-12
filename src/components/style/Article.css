@@ -1,0 +1,53 @@
+.card-article {
+    box-sizing: border-box;
+}
+
+.card {
+    background: none;
+    border: none;
+}
+
+.trending-card {
+    margin-top: -10px;
+    cursor: pointer;
+    
+}
+.cards-trendings {
+    margin: 40px 0;
+}
+
+.col-md-4 img {
+    width: 220px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.card-body {
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.text-muted {
+    line-height: 45px;
+    margin-top: -20px;
+    display: block;
+    font-size: 15px;
+}
+
+
+.title-article {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 30px;
+}
+.title-article h4 {
+    font-size: 25px;
+}
+
+.title-article:hover {
+    height: auto;
+    background-color: #00b900;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.carousel-item img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption{
+    background-color: #000;
+    color: #fff;
+}
+
+.headline-news {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.headline-news:hover  {
+    border: 2px solid #00b900;
+    
+}
+
+.headline-news .carousel-caption:hover {
+    background-color: #fff;
+    color: #00b900;
+}

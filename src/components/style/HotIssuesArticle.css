@@ -1,0 +1,24 @@
+.cards-article {
+    background-color: #fff;
+    color: #000;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.header-card-logo {
+    background-color: rgb(250, 89, 89);
+    padding: 40px;
+    height: auto;
+    color: #fff;
+}
+
+.cards-news{
+    padding: 30px;
+}
+
+.hot-issues-card {
+    cursor: pointer;
+}
