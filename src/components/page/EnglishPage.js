@@ -6,6 +6,7 @@ import Header from '../Header'
 import HeadLineEnglish from './English/HeadLineEnglish'
 import RecommendEnglish from './English/RecommendEnglish'
 import LatestNewsEnglish from './English/LatestNewsEnglish'
+import Footer from '../Footer'
 
 function EnglishPage() {
     return (
@@ -19,6 +20,7 @@ function EnglishPage() {
                     <RecommendEnglish />
                     <LatestNewsEnglish />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

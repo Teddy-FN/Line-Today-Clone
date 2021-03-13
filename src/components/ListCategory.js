@@ -1,20 +1,26 @@
 import React from 'react'
 // Import Style
 import './style/ListCategory.css'
-
+import { Link } from 'react-router-dom'
 
 export default function ListCategory() {
     return (
         <div>
             <div className="list">
                 <div className="list-title">
-                    <h3>HOT Issue</h3>
+                    <Link to="/Sci-Tech">
+                        <h3>Sci-Tech</h3>
+                    </Link>
                 </div>
                 <div className="list-title">
-                    <h3>Watch Now</h3>
+                    <Link to="/Sports">
+                        <h3>Sports</h3>
+                    </Link>
                 </div>
                 <div className="list-title">
-                    <h3>K! Update</h3>
+                    <Link to="/Games">
+                        <h3>Games</h3>
+                    </Link>
                 </div>
             </div>
         </div>

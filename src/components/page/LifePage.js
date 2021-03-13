@@ -16,6 +16,7 @@ import Reads from './Life/Reads'
 import ParentingLife from './Life/ParentingLife'
 import TrendingLife from './Life/TrendingLife'
 import LatestLife from './Life/LatestLife'
+import Footer from '../Footer'
 
 
 function NewsPage() {
@@ -41,6 +42,7 @@ function NewsPage() {
                     <TrendingLife />
                     <LatestLife />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

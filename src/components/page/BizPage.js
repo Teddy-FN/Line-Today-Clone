@@ -6,6 +6,7 @@ import Header from '../Header'
 import HeadLineBiz from './Biz/HeadLineBiz';
 import BizzToday from './Biz/BizzToday';
 import BizzLatest from './Biz/BizzLatest';
+import Footer from '../Footer';
 
 function BizPage() {
     return (
@@ -19,6 +20,7 @@ function BizPage() {
                     <BizzToday />
                     <BizzLatest />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

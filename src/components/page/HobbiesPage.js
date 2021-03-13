@@ -9,6 +9,7 @@ import Reading from './Hobies/Reading'
 import ArtCraft from './Hobies/ArtCraft'
 import WorkOut from './Hobies/WorkOut'
 import NewHobbies from './Hobies/NewHobbies'
+import Footer from '../Footer'
 function HobbiesPage() {
     return (
         <div>
@@ -26,6 +27,7 @@ function HobbiesPage() {
                     <WorkOut />
                     <NewHobbies />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

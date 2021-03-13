@@ -6,6 +6,7 @@ import ArticleMovie2 from './Movie/ArticleMovie2'
 import HeadLineMovie from './Movie/HeadLineMovie'
 import ArticleMovie3 from './Movie/ArticleMovie3'
 import LatestMovie from './Movie/LatestMovie'
+import Footer from '../Footer'
 
 function MoviePage() {
     return (
@@ -21,6 +22,7 @@ function MoviePage() {
                     <ArticleMovie3 />
                     <LatestMovie />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

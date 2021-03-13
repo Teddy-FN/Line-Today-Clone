@@ -14,29 +14,23 @@ function ShowbizzNews() {
 
     return (
         <div>
-            <div>
-                <div className="cards-article">
-                    <div className="korean-cards">
-                        {
-                            showbizChoose.map((items, idx) => {
-                                return (
-                                    <div className="card mb-3" key={idx} onClick={() => window.location.href = items.url.url} style={{ cursor: 'pointer' }}>
-                                        <div className="row no-gutters">
-                                            <div className="col-md-4">
-                                                <img src={`https://obs.line-scdn.net/${items.thumbnail.hash}/w280`} className="card-img-top" alt="Images" />
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <h5 className="card-title">{items.title}</h5>
-                                                    <p className="card-text"><small className="text-muted">{items.publisher}</small></p>
-                                                </div>
-                                            </div>
+            <div className="cards-article">
+                <div className="row row-cols-1 row-cols-md-2 cards-news">
+                    {
+                        showbizChoose.map((items, idx) => {
+                            return (
+                                <div className="col mb-4" key={idx} style={{ cursor: "pointer" }} onClick={() => window.location.href = items.url.url}>
+                                    <div className="card">
+                                        <img src={`https://obs.line-scdn.net/${items.thumbnail.hash}/w1200`} className="card-img-top" alt="Images" />
+                                        <div className="card-body">
+                                            <h5 className="card-title">{items.title}</h5>
+                                            <p className="card-text"><small className="text-muted">{items.publisher}</small></p>
                                         </div>
                                     </div>
-                                )
-                            })
-                        }
-                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

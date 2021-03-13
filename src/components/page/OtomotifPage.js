@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import ArticleOtomotifPage from './Otomotif/ArticleOtomotifPage'
@@ -18,6 +19,7 @@ function OtomotifPage() {
                     <ArticleOtomotifPage />
                     <LatestOtomotif />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

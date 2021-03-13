@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react'
 import './style/Login.css'
 import { Link } from 'react-router-dom'
+
 import { useAuth } from '../contexts/AuthContext'
 
-function Login() {
+function SignUpComp() {
 
     const emailRef = useRef()
     const passwordRef = useRef()
@@ -47,9 +48,12 @@ function Login() {
                             <div class="form-group">
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Kata Sandi" ref={passwordRef} required />
                             </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Konfirmasi Kata Sandi" ref={passwordRef} required />
+                            </div>
                             <button type="submit" class="btn btn-submit" disabled={loading}>Submit</button>
                         </form>
-                        <h4>Don't have account?<Link to="./signup">Register</Link></h4>
+                        <h4>Already Account?<Link to="./Login">Login</Link></h4>
                     </div>
                 </div>
             </div>
@@ -57,4 +61,4 @@ function Login() {
     )
 }
 
-export default Login
+export default SignUpComp

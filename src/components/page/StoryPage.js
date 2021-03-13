@@ -23,6 +23,7 @@ import EksklusifStory1 from './Story/EksklusifStory1'
 import EksklusifStory2 from './Story/EksklusifStory2'
 import EksklusifStory3 from './Story/EksklusifStory3'
 import EksklusifStory4 from './Story/EksklusifStory4'
+import Footer from '../Footer'
 
 function StoryPage() {
     return (
@@ -55,6 +56,7 @@ function StoryPage() {
                     <EksklusifStory3 />
                     <EksklusifStory4 />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import HeadLineSport from './Sport/HeadLineSport'
@@ -19,6 +20,7 @@ function SportPage() {
                     <Latest />
                     <MostCommented />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

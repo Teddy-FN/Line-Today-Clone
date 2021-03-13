@@ -4,6 +4,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin-bottom: 10px;
+    width: 100%;
 }
 .title-bar img {
     padding: 8px;
@@ -37,14 +38,16 @@
     list-style: none;
     padding: 0;
 }
+.nav .nav-item p {
+    color: #9f9f9f;
+}
 
 .nav li p {
     margin-bottom: 8px;
 }
 
 .catergory-items {
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 .catergory-items li{
     display: inline-block;
@@ -64,4 +67,15 @@
 .catergory-items li:first-child {
     font-weight: 900;
     border-bottom: 2px solid black;
+    color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+    .title-bar .btn {
+        width: auto;
+    } 
+    .catergory-items li {
+        margin-right: 15px;
+    }
 }

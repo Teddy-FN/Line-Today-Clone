@@ -8,6 +8,7 @@ import JatimNews from './Regional/JatimNews'
 import SumselNews from './Regional/SumselNews'
 import Latest from './Regional/Latest'
 import RegionalNews from './Regional/RegionalNews'
+import Footer from '../Footer'
 
 function RegionalPage() {
     return (
@@ -25,6 +26,7 @@ function RegionalPage() {
                     <SumselNews />
                     <Latest />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

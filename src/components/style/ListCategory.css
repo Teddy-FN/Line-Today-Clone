@@ -1,11 +1,12 @@
 .list {
     display: grid;
     grid-template-columns: repeat(3, 230px);
-    height: 50px;
+    height: 10px;
     justify-content: center;
     align-items: center;
     gap: 1px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .list-title {
@@ -22,4 +23,26 @@
     line-height: 50px;
     color: #292929;
     font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .list {
+        width: auto;
+        height: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        width: 62%;
+        height: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 160px);
+        margin-left: 80px;
+    }   
 }

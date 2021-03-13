@@ -4,4 +4,10 @@
 
 .korean-cards {
     padding: 20px;
+    width: 500px;
+}
+
+.no-gutters img {
+    height: 180px;
+    width: 180px;
 }

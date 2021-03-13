@@ -15,6 +15,7 @@ import LocalNews from './News/LocalNews'
 import MostCommented from './News/MostCommented'
 import LatestNews from './News/LatestNews'
 import AnyJusticeNews from './News/AnyJusticeNews'
+import Footer from '../Footer'
 
 function NewsPage() {
     return (
@@ -40,6 +41,7 @@ function NewsPage() {
                     <LatestNews />
                     <AnyJusticeNews />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

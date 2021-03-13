@@ -3,6 +3,7 @@ import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import Scitech from './SciTech/Scitech'
 import Latest from './SciTech/Latest'
+import Footer from '../Footer'
 
 function SciTechPage() {
     return (
@@ -15,6 +16,7 @@ function SciTechPage() {
                     <Scitech />
                     <Latest />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

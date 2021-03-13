@@ -19,6 +19,7 @@ import AnyVideos6 from './Videos/AnyVideos6'
 import FunEntertaining from './Videos/FunEntertaining'
 import DramaIndo from './Videos/DramaIndo'
 import Latest from './Videos/Latest'
+import Footer from '../Footer'
 function VideosPage() {
     return (
         <div>
@@ -46,6 +47,7 @@ function VideosPage() {
                     <DramaIndo />
                     <Latest />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

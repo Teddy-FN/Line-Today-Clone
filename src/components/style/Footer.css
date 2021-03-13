@@ -1,0 +1,30 @@
+footer {
+    padding: 40px;
+    border-top: 1px solid #fff;
+}
+
+.terms-rule {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    color: #9f9f9f;
+    font-size: 13px;
+    line-height: 20px;
+}
+.copyright h3 {
+    font-size: 13px;
+    text-align: center;
+}
+.copyright {
+    color: #bdbdbd;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .terms-rule {
+        width: 60%;
+        justify-content: space-around;
+    }   
+}

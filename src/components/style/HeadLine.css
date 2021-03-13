@@ -25,3 +25,22 @@
     background-color: #fff;
     color: #00b900;
 }
+
+
+@media screen and (max-width: 768px) {
+    .carousel-caption{
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        z-index: 999;
+    }
+    .headline-news {
+        color: #fff;
+        display: inline-block;
+        z-index: 999;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+}

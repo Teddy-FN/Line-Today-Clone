@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import HeadLineParenting from './Parenting/HeadLineParenting'
@@ -15,6 +16,7 @@ function ParentingPage() {
                     <HeadLineParenting />
                     <LatestParenting />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import CrimeStory from './Trendings/CrimeStory'
@@ -17,6 +18,7 @@ function TrendingsPage() {
                     <CrimeStory />
                     <HeadLineTrendings />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

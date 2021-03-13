@@ -13,6 +13,7 @@ import BeritaTerbaru from './Showbizz/BeritaTerbaru'
 import HotNews from './Showbizz/HotNews'
 import ShowbizHeadline from './Showbizz/ShowbizHeadline'
 import HeadLineShowbizz from './Showbizz/HeadLineShowbizz'
+import Footer from '../Footer'
 
 function ShowbizPage() {
     return (
@@ -33,6 +34,7 @@ function ShowbizPage() {
                     <ShowbizzNews />
                     <BeritaTerbaru />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

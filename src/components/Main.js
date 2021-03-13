@@ -6,6 +6,7 @@ import Header from './Header'
 import ListCategory from './ListCategory'
 import HeadLine from './HeadLine'
 import Article from './Article'
+import Footer from './Footer'
 
 function Main() {
     return (
@@ -22,6 +23,7 @@ function Main() {
             <ArticleContent>
                 <Article />
             </ArticleContent>
+            <Footer />
         </ContainerApp>
     )
 }
@@ -33,6 +35,13 @@ const ContainerApp = styled.div`
     margin: 0 auto;
     box-sizing: border-box;
     height: 100%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
 `
 const ContainerWrapper = styled.div`
     background-color: #fff;

@@ -6,6 +6,7 @@ import HeadLineIntermezzo from './Intermezzo/HeadLineIntermezzo'
 import NewsForYou from './Intermezzo/NewsForYou'
 import VideoForYou from './Intermezzo/VideoForYou'
 import IntermezzoNews from './Intermezzo/IntermezzoNews'
+import Footer from '../Footer'
 function IntermezzoPage() {
     return (
         <div>
@@ -19,6 +20,7 @@ function IntermezzoPage() {
                     <VideoForYou />
                     <IntermezzoNews />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

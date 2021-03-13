@@ -4,6 +4,7 @@ import Header from '../Header'
 
 // Import Page
 import HeadLineCampus from './Campus/HeadLineCampus'
+import Footer from '../Footer'
 
 function CampusPage() {
     return (
@@ -15,6 +16,7 @@ function CampusPage() {
                 <ArticleContent>
                     <HeadLineCampus />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )

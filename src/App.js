@@ -27,6 +27,8 @@ import KataGaulPage from './components/page/KataGaulPage';
 import EnglishPage from './components/page/EnglishPage';
 import MusicPage from './components/page/MusicPage';
 import CampusPage from './components/page/CampusPage';
+import SignUpComp from './components/SignUpComp';
+import TopPage from './components/page/TopPage'
 
 function App() {
   return (
@@ -36,6 +38,9 @@ function App() {
           <Switch>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/signup">
+              <SignUpComp />
             </Route>
             <Route path="/" exact>
               <Main />
@@ -102,6 +107,9 @@ function App() {
             </Route>
             <Route path="/Campus" exact>
               <CampusPage />
+            </Route>
+            <Route path="/TOP" exact>
+              <TopPage />
             </Route>
           </Switch>
         </AuthProvider>

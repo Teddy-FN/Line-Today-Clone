@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header'
-import { ContainerApp, ContainerWrapper, ContentContainer } from '../Main'
+import { ContainerApp, ContainerWrapper } from '../Main'
 
 function KataGaulPage() {
     return (

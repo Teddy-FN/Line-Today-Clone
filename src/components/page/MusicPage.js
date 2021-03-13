@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import { ContainerApp, ContainerWrapper, ArticleContent } from '../Main'
 import BestHits from './Music/BestHits'
@@ -33,6 +34,7 @@ function MusicPage() {
                     <NewsKlip />
                     <PopularCovers />
                 </ArticleContent>
+                <Footer />
             </ContainerApp>
         </div>
     )
