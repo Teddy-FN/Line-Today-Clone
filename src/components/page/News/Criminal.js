@@ -9,10 +9,8 @@ function Criminal() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('Criminal', res.data.result.categories[2].templates[6].sections[0].articles)
                 setHotNews(res.data.result.categories[2].templates[6].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

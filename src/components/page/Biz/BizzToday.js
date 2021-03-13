@@ -9,10 +9,8 @@ function BizzToday() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('BIZZ TODAY', res.data.result.categories[10])
                 setShobizChoose(res.data.result.categories[10].templates[2].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

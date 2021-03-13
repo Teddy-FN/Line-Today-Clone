@@ -8,7 +8,6 @@ function InfoFilmDanDrama() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                // console.log('INFO FILM DAN DRAMA', res.data.result.categories[0].templates[11].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[11].sections[0].articles)
             })
     }, [])

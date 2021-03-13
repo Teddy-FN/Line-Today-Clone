@@ -9,10 +9,8 @@ function NewsForYou() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('NEWS INTERMEZZO', res.data.result.categories[5].templates[4].sections[0].articles)
                 setShobizChoose(res.data.result.categories[5].templates[4].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

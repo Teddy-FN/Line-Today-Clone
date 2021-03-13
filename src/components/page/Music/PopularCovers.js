@@ -7,7 +7,6 @@ function PopularCovers() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('MOVIE SECTIONS', res.data.result.categories[20].templates[6].sections[0].articles)
                 setArticle(res.data.result.categories[20].templates[6].sections[0].articles)
             })
     }, [])

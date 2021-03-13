@@ -10,18 +10,14 @@ function NewHobbies() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH RECOMEND', res.data.result.categories[13].templates[3].sections[0].articles)
                 setShobizChoose(res.data.result.categories[13].templates[3].sections[0].articles)
             })
-            .catch(err => console.log(err))
 
 
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH RECOMEND', res.data.result.categories[13].templates[3].sections[0].articles)
                 setHobbies(res.data.result.categories[13].templates[3].sections[1].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

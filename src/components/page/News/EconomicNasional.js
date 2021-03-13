@@ -8,10 +8,8 @@ function EconomicNasional() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('NEWS', res.data.result.categories[2])
                 setHotNews(res.data.result.categories[2].templates[4].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

@@ -7,8 +7,6 @@ function LocalArticle() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('MINUS', res.data.result.categories[0])
-                console.log('LOCALE ARTICLE', res.data.result.categories[0].templates[13].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[13].sections[0].articles)
             })
     }, [])

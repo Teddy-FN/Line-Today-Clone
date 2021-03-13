@@ -9,10 +9,8 @@ function ArtCraft() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH RECOMEND', res.data.result.categories[13].templates[7].sections[0].articles)
                 setShobizChoose(res.data.result.categories[13].templates[7].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

@@ -8,10 +8,8 @@ function LifeStyle() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                console.log('LIFESTYLE DATA', res.data.result.categories[0].templates[10].sections[0].articles)
                 getArticle(res.data.result.categories[0].templates[10].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

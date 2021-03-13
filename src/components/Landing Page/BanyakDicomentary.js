@@ -8,7 +8,6 @@ function BanyakDicomentary() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('BANYAK DI COMENTARY', res.data.result.categories[0].templates[20].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[20].sections[0].articles)
             })
     }, [])

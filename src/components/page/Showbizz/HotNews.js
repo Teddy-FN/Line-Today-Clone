@@ -9,7 +9,6 @@ function HotNews() {
             .then((res) => {
                 setHotNews(res.data.result.categories[1].templates[3].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

@@ -6,8 +6,6 @@ function HeadLineRegional() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HEADLINE REGIONAL', res.data.result.categories[4])
-                // Sections 2 buat video
                 setHeadline(res.data.result.categories[4].templates[1].sections[0].articles)
             })
     }, [])

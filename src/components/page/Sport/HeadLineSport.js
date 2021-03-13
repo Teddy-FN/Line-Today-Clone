@@ -7,7 +7,6 @@ function BestHits() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('SPort SECTIONS', res.data.result.categories)
                 setArticle(res.data.result.categories[9].templates[3].sections[0].articles)
             })
     }, [])

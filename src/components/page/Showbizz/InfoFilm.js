@@ -7,12 +7,10 @@ function InfoFilm() {
 
 
     useEffect(() => {
-        // Berita Showbiz Pilihan Untukmu
         axios.get('/id/portaljson')
             .then((res) => {
                 setShobizChoose(res.data.result.categories[1].templates[8].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

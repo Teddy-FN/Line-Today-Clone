@@ -7,7 +7,6 @@ function Videos2() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('VIDEOS SECTIONS', res.data.result.categories)
                 setArticle(res.data.result.categories[7].templates[1].sections[1].articles)
             })
     }, [])

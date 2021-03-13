@@ -7,7 +7,6 @@ function MostCommented() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('SPort SECTIONS', res.data.result.categories)
                 setArticle(res.data.result.categories[9].templates[7].sections[0].articles)
             })
     }, [])

@@ -7,7 +7,6 @@ function SportNews() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                console.log('SPORT NEWS', res.data.result.categories[0].templates[16].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[16].sections[0].articles)
             })
     }, [])

@@ -6,7 +6,6 @@ function HeadLineNews() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HEADLINE NEWS', res.data.result.categories[0].templates[13].sections[0].articles)
                 setHeadline(res.data.result.categories[0].templates[13].sections[0].articles)
             })
     }, [])

@@ -9,7 +9,6 @@ function ShowbizHeadline() {
             .then((res) => {
                 setFirstPage(res.data.result.categories[1].templates[1].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

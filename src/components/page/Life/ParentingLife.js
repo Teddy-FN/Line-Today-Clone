@@ -7,7 +7,6 @@ function ParentingLife() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH SECTIONS', res.data.result.categories[3].templates[13].sections[0].articles)
                 setArticle(res.data.result.categories[3].templates[13].sections[0].articles)
             })
     }, [])

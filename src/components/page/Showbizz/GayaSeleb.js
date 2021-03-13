@@ -9,7 +9,6 @@ function GayaSeleb() {
             .then((res) => {
                 setShobizChoose(res.data.result.categories[1].templates[6].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

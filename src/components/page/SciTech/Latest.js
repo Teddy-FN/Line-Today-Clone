@@ -7,7 +7,6 @@ function Scitech() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('SCI TECH NEWS', res.data.result.categories)
                 setArticle(res.data.result.categories[8].templates[3].sections[0].articles)
             })
     }, [])

@@ -10,7 +10,6 @@ function Music() {
             .then((res) => {
                 setShobizChoose(res.data.result.categories[1].templates[9].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

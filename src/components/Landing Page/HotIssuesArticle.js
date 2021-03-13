@@ -10,10 +10,8 @@ function HotIssuesArticle() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                // console.log('INI RES HOT ISSUE', res.data.result.categories[0].templates[8].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[8].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

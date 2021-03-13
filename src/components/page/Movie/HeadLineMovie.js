@@ -7,7 +7,6 @@ function HeadLineMovie() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('MOVIE SECTIONS', res.data.result.categories[11].templates[0].sections[0].articles)
                 setArticle(res.data.result.categories[11].templates[0].sections[0].articles)
             })
     }, [])

@@ -6,7 +6,6 @@ function HeadLineLife() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HEADLINE LIFE', res.data.result.categories[3].templates[1].sections[0].articles)
                 setHeadline(res.data.result.categories[3].templates[1].sections[0].articles)
             })
     }, [])

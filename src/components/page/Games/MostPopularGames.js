@@ -7,7 +7,6 @@ function MostPopularGames() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH SECTIONS', res.data.result.categories[17].templates[4].sections[0].articles)
                 setArticle(res.data.result.categories[17].templates[4].sections[0].articles)
             })
     }, [])

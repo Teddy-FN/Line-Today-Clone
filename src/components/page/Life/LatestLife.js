@@ -9,10 +9,8 @@ function LatestLife() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH RECOMEND', res.data.result.categories[3].templates[16].sections[0].articles)
                 setShobizChoose(res.data.result.categories[3].templates[16].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

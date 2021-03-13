@@ -12,7 +12,6 @@ function Header() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                console.log('BUAT HEADER LIST', res.data.result.categoryList)
                 setListArticle(res.data.result.categoryList)
             })
     }, [])

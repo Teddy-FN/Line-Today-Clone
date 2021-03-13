@@ -6,8 +6,6 @@ function HeadLineOtomotif() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HEADLINE Otomotif', res.data.result.categories[14])
-                // Sections 2 buat video
                 setHeadline(res.data.result.categories[14].templates[1].sections[1].articles)
             })
     }, [])

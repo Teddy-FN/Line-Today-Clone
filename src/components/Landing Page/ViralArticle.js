@@ -9,10 +9,8 @@ function ViralArticle() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                // console.log('Categories', res.data.result.categories[0].templates[6].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[6].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (
@@ -22,7 +20,6 @@ function ViralArticle() {
             </div>
             {
                 article.map((items, idx) => {
-                    // console.log(items)
                     return (
                         <div key={idx} onClick={() => window.location.href = items.url.url} className="cards-trendings">
                             <div className="trending-card">

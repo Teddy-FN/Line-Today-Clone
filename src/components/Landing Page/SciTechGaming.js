@@ -8,7 +8,6 @@ function SciTechGaming() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('SCI TECH AND GAMING', res.data.result.categories[0].templates[17].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[17].sections[0].articles)
             })
     }, [])

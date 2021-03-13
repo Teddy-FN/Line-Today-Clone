@@ -7,7 +7,6 @@ function CrimeStory() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('STORY SECTIONS', res.data.result.categories)
                 setArticle(res.data.result.categories[6].templates[3].sections[0].articles)
             })
     }, [])

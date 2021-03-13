@@ -7,7 +7,6 @@ function EksklusifStory2() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('STORY SECTIONS', res.data.result.categories)
                 setArticle(res.data.result.categories[12].templates[23].sections[0].articles)
             })
     }, [])

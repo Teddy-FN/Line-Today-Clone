@@ -7,7 +7,6 @@ function VideoNews() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('VIDEO NEWS', res.data.result.categories[0].templates[15].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[15].sections[0].articles)
             })
     }, [])

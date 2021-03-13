@@ -7,10 +7,8 @@ function HeadLineIntermezzo() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH HEADLINE', res.data.result.categories[0].templates[14].sections[0].articles)
                 setCarousel(res.data.result.categories[0].templates[14].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

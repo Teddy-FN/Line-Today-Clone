@@ -7,10 +7,8 @@ function HeadLineCampus() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HEADLINE CAMPUS', res.data.result.categories[21].templates[1].sections[0].articles)
                 setCarousel(res.data.result.categories[21].templates[1].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

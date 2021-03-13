@@ -4,12 +4,10 @@ import axios from 'axios'
 function Viral() {
     const [showbizChoose, setShobizChoose] = useState([])
     useEffect(() => {
-        // Berita Showbiz Pilihan Untukmu
         axios.get('/id/portaljson')
             .then((res) => {
                 setShobizChoose(res.data.result.categories[1].templates[10].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

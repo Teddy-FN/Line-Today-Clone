@@ -8,10 +8,8 @@ function HighlightTodayNews() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('HIGHLIGHT TODAY', res.data.result.categories[2].templates[3].sections[0].articles)
                 setHotNews(res.data.result.categories[2].templates[3].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

@@ -12,7 +12,6 @@ function BeritaTerbaru() {
             .then((res) => {
                 setShobizChoose(res.data.result.categories[1].templates[12].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

@@ -8,10 +8,8 @@ function NewsVideo() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('NEWS', res.data.result.categories[2].templates[7].sections[0].articles)
                 setHotNews(res.data.result.categories[2].templates[7].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

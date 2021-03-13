@@ -7,7 +7,6 @@ function WorkOut() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('ENGLISH SECTIONS', res.data.result.categories[13].templates[8].sections[0].articles)
                 setArticle(res.data.result.categories[13].templates[8].sections[0].articles)
             })
     }, [])

@@ -9,7 +9,6 @@ function HeadLineShowbizz() {
             .then((res) => {
                 setCarousel(res.data.result.categories[0].templates[9].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
     return (
         <div>

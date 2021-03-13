@@ -12,7 +12,6 @@ function Article() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                console.log('APA INI', res.data.result.categories[0].templates[7].sections[0].articles)
                 setHeadLine(res.data.result.categories[0].templates[1].sections[0].articles)
             });
     }, [])

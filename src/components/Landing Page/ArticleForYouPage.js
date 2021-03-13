@@ -9,10 +9,8 @@ function ArticleForYouPage() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then(res => {
-                // console.log('INI RES ARTICLE FOR YOUR PAGE', res.data.result.categories[0].templates[7].sections[0].articles)
                 getArticle(res.data.result.categories[0].templates[7].sections[0].articles)
             })
-            .catch(err => console.log(err))
     }, [])
 
     return (

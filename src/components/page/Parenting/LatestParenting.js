@@ -7,7 +7,6 @@ function LatestParenting() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('MOVIE SECTIONS', res.data.result.categories[15].templates[4].sections[0].articles)
                 setArticle(res.data.result.categories[15].templates[4].sections[0].articles)
             })
     }, [])

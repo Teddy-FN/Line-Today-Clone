@@ -7,7 +7,6 @@ function BeritaTerbaru() {
     useEffect(() => {
         axios.get('/id/portaljson')
             .then((res) => {
-                console.log('BERITA TERBARU', res.data.result.categories[0].templates[19].sections[0].articles)
                 setArticle(res.data.result.categories[0].templates[19].sections[0].articles)
             })
     }, [])
