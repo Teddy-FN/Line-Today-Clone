@@ -2,8 +2,6 @@ import './App.css';
 import Main from './components/Main';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login';
-// import { AuthProvider } from './contexts/AuthContext';
-
 
 // Page
 import ShowbizPage from './components/page/ShowbizPage';
