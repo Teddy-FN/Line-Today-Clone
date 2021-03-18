@@ -2,7 +2,7 @@ import './App.css';
 import Main from './components/Main';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login';
-import { AuthProvider } from './contexts/AuthContext';
+// import { AuthProvider } from './contexts/AuthContext';
 
 
 // Page
@@ -34,85 +34,83 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <AuthProvider>
-          <Switch>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/signup">
-              <SignUpComp />
-            </Route>
-            <Route path="/" exact>
-              <Main />
-            </Route>
-            <Route path="/Showbiz" exact>
-              <ShowbizPage />
-            </Route>
-            <Route path="/News" exact>
-              <NewsPage />
-            </Route>
-            <Route path="/Life" exact>
-              <LifePage />
-            </Route>
-            <Route path="/Regional" exact>
-              <RegionalPage />
-            </Route>
-            <Route path="/Intermezzo" exact>
-              <IntermezzoPage />
-            </Route>
-            <Route path="/Trending" exact>
-              <TrendingsPage />
-            </Route>
-            <Route path="/Videos" exact>
-              <VideosPage />
-            </Route>
-            <Route path="/Sci-Tech" exact>
-              <SciTechPage />
-            </Route>
-            <Route path="/Sports" exact>
-              <SportPage />
-            </Route>
-            <Route path="/Biz" exact>
-              <BizPage />
-            </Route>
-            <Route path="/Movie" exact>
-              <MoviePage />
-            </Route>
-            <Route path="/Story" exact>
-              <StoryPage />
-            </Route>
-            <Route path="/Hobbies" exact>
-              <HobbiesPage />
-            </Route>
-            <Route path="/Otomotif" exact>
-              <OtomotifPage />
-            </Route>
-            <Route path="/Parenting" exact>
-              <ParentingPage />
-            </Route>
-            <Route path="/Corona-di-RI" exact>
-              <CoronaRiPage />
-            </Route>
-            <Route path="/Games" exact>
-              <Games />
-            </Route>
-            <Route path="/katagaul" exact>
-              <KataGaulPage />
-            </Route>
-            <Route path="/English" exact>
-              <EnglishPage />
-            </Route>
-            <Route path="/Music" exact>
-              <MusicPage />
-            </Route>
-            <Route path="/Campus" exact>
-              <CampusPage />
-            </Route>
-            <Route path="/TOP" exact>
-              <TopPage />
-            </Route>
-          </Switch>
-        </AuthProvider>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUpComp />
+          </Route>
+          <Route path="/" exact>
+            <Main />
+          </Route>
+          <Route path="/Showbiz" exact>
+            <ShowbizPage />
+          </Route>
+          <Route path="/News" exact>
+            <NewsPage />
+          </Route>
+          <Route path="/Life" exact>
+            <LifePage />
+          </Route>
+          <Route path="/Regional" exact>
+            <RegionalPage />
+          </Route>
+          <Route path="/Intermezzo" exact>
+            <IntermezzoPage />
+          </Route>
+          <Route path="/Trending" exact>
+            <TrendingsPage />
+          </Route>
+          <Route path="/Videos" exact>
+            <VideosPage />
+          </Route>
+          <Route path="/Sci-Tech" exact>
+            <SciTechPage />
+          </Route>
+          <Route path="/Sports" exact>
+            <SportPage />
+          </Route>
+          <Route path="/Biz" exact>
+            <BizPage />
+          </Route>
+          <Route path="/Movie" exact>
+            <MoviePage />
+          </Route>
+          <Route path="/Story" exact>
+            <StoryPage />
+          </Route>
+          <Route path="/Hobbies" exact>
+            <HobbiesPage />
+          </Route>
+          <Route path="/Otomotif" exact>
+            <OtomotifPage />
+          </Route>
+          <Route path="/Parenting" exact>
+            <ParentingPage />
+          </Route>
+          <Route path="/Corona-di-RI" exact>
+            <CoronaRiPage />
+          </Route>
+          <Route path="/Games" exact>
+            <Games />
+          </Route>
+          <Route path="/katagaul" exact>
+            <KataGaulPage />
+          </Route>
+          <Route path="/English" exact>
+            <EnglishPage />
+          </Route>
+          <Route path="/Music" exact>
+            <MusicPage />
+          </Route>
+          <Route path="/Campus" exact>
+            <CampusPage />
+          </Route>
+          <Route path="/TOP" exact>
+            <TopPage />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
